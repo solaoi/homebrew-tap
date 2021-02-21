@@ -5,21 +5,25 @@
 class Tuna < Formula
   desc "Software to generate and serve JSON/HTML with flow model"
   homepage "https://github.com/solaoi/tuna-mayonnaise"
-  version "0.0.9-alpha"
+  version "0.0.11-alpha"
   license "MIT"
   bottle :unneeded
 
-  if OS.mac?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.9-alpha/tuna_0.0.9-alpha_macOS-64bit.tar.gz"
-    sha256 "3ec3fd3573d9659b4be185f8a8cc2ba52c1e30da6ec4f58859156abbf624c474"
+  if OS.mac? && Hardware::CPU.intel?
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.11-alpha/tuna_0.0.11-alpha_macOS-64bit.tar.gz"
+    sha256 "d50152b5e531fe1eb27fa7eeba2e1660a7e1e20948aa728f393bea481f36fa15"
+  end
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.11-alpha/tuna_0.0.11-alpha_macOS-ARM64.tar.gz"
+    sha256 "49698e24287d79a06402d18933dd2dba826a84ca087578d522a32f73a0717d97"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.9-alpha/tuna_0.0.9-alpha_Linux-64bit.tar.gz"
-    sha256 "b55bce30eb0bcf89593aabdf1799c35d43b53a09fe920bb89ce4771bd9d9b141"
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.11-alpha/tuna_0.0.11-alpha_Linux-64bit.tar.gz"
+    sha256 "b7f03ab691f93b9cf56cf4779e36594b1298b5e03985ada3cce30d74b571371e"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.9-alpha/tuna_0.0.9-alpha_Linux-ARM64.tar.gz"
-    sha256 "7332187373cb0887c5599a711ee1666808d54e38e07acf6c07b87d0ac06fad5a"
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.11-alpha/tuna_0.0.11-alpha_Linux-ARM64.tar.gz"
+    sha256 "9369508a2396a62366a8120b756edf2fec0d71332be76c1fbd39794e45fe379e"
   end
 
   def install
