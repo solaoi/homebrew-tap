@@ -5,25 +5,25 @@
 class Tuna < Formula
   desc "Software to generate and serve JSON/HTML with flow model"
   homepage "https://github.com/solaoi/tuna-mayonnaise"
-  version "0.0.12-alpha"
+  version "0.0.15-alpha"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.12-alpha/tuna_0.0.12-alpha_macOS-64bit.tar.gz"
-    sha256 "2fb1f5de59fedafb6e5bb9ba5a67eed7bb40d84c2b6dde65746f9447fd0e90da"
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.15-alpha/tuna_0.0.15-alpha_macOS-64bit.tar.gz"
+    sha256 "69e99d9f61112e6872329fab16dfa1753d55bc6af6f4207ff452ed71bcc39bf2"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.12-alpha/tuna_0.0.12-alpha_macOS-ARM64.tar.gz"
-    sha256 "e448b2cc4f95929a24949f3ba947a63683b4ce74fad32d17ffc38ba99991a8d2"
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.15-alpha/tuna_0.0.15-alpha_macOS-ARM64.tar.gz"
+    sha256 "d10c627f97519d9482b77dd90cd6a889e76fc6da1b558e7cc38b12fbd9dee543"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.12-alpha/tuna_0.0.12-alpha_Linux-64bit.tar.gz"
-    sha256 "a7bc8d6f124a23ecfd2c0b74897141aee97f2112ede0420904f0245da6e142d3"
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.15-alpha/tuna_0.0.15-alpha_Linux-64bit.tar.gz"
+    sha256 "7baa8ef0a0b58c9503ec77f7da7ea74acf8969978fcab6334ae9b5cbbd61921e"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.12-alpha/tuna_0.0.12-alpha_Linux-ARM64.tar.gz"
-    sha256 "51e424e9cc246de4f10ee75f7c9b6ea8d92f1350b706fe214495640a99d33e91"
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.15-alpha/tuna_0.0.15-alpha_Linux-ARM64.tar.gz"
+    sha256 "b5268e065c0958d7c1daefa11e6dac3fb9708dce2cdccbf4a8ba7c9d5db33040"
   end
 
   def install
