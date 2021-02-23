@@ -5,25 +5,25 @@
 class Tuna < Formula
   desc "Software to generate and serve JSON/HTML with flow model"
   homepage "https://github.com/solaoi/tuna-mayonnaise"
-  version "0.0.15-alpha"
+  version "0.0.16-alpha"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.15-alpha/tuna_0.0.15-alpha_macOS-64bit.tar.gz"
-    sha256 "69e99d9f61112e6872329fab16dfa1753d55bc6af6f4207ff452ed71bcc39bf2"
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.16-alpha/tuna_0.0.16-alpha_macOS-64bit.tar.gz"
+    sha256 "7af8aefe7f13254bb4d44a62f2e1832e51a066094b09c138f83a5f66dd36fd8a"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.15-alpha/tuna_0.0.15-alpha_macOS-ARM64.tar.gz"
-    sha256 "d10c627f97519d9482b77dd90cd6a889e76fc6da1b558e7cc38b12fbd9dee543"
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.16-alpha/tuna_0.0.16-alpha_macOS-ARM64.tar.gz"
+    sha256 "1a2b5d6f63607b43ada6eac472dda7b62fb7f670a29b03e6571db13e44353666"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.15-alpha/tuna_0.0.15-alpha_Linux-64bit.tar.gz"
-    sha256 "7baa8ef0a0b58c9503ec77f7da7ea74acf8969978fcab6334ae9b5cbbd61921e"
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.16-alpha/tuna_0.0.16-alpha_Linux-64bit.tar.gz"
+    sha256 "42f361746f5f4f52a3c52d035ce32afa56fc682d3f86f5847c66bbf32ff54592"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.15-alpha/tuna_0.0.15-alpha_Linux-ARM64.tar.gz"
-    sha256 "b5268e065c0958d7c1daefa11e6dac3fb9708dce2cdccbf4a8ba7c9d5db33040"
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.16-alpha/tuna_0.0.16-alpha_Linux-ARM64.tar.gz"
+    sha256 "259b0c1258a4cebb2e2e9809c65f60a62848403d9ddc5d9c6fe22390c3c6b78b"
   end
 
   def install
