@@ -5,25 +5,30 @@
 class Tuna < Formula
   desc "Software to generate and serve JSON/HTML with flow model"
   homepage "https://github.com/solaoi/tuna-mayonnaise"
-  version "0.0.17-alpha"
+  version "0.0.19-alpha"
   license "MIT"
   bottle :unneeded
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.17-alpha/tuna_0.0.17-alpha_macOS-64bit.tar.gz"
-    sha256 "124fce8b1e73b5c036c56c606267479c546e645099dbff4194d039f78c8ebcac"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.19-alpha/tuna_0.0.19-alpha_macOS-64bit.tar.gz"
+      sha256 "90c4b1b5dd63f0604a9827097b51a4c4f060cb1766402ef1358efa99504a7cbd"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.19-alpha/tuna_0.0.19-alpha_macOS-ARM64.tar.gz"
+      sha256 "edd111e215396dacc2bb810c5c72d0732fd8ef1b2ed5aa8b8f58ed4d907b12de"
+    end
   end
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.17-alpha/tuna_0.0.17-alpha_macOS-ARM64.tar.gz"
-    sha256 "eb2caaf576eddb2beba9d28206e1af6e3213ece257497f009a679868f72590a8"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.17-alpha/tuna_0.0.17-alpha_Linux-64bit.tar.gz"
-    sha256 "445300b4c24768a50992e7452ccbf41d3363527422afd488f8598e275b7b26e1"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.17-alpha/tuna_0.0.17-alpha_Linux-ARM64.tar.gz"
-    sha256 "cb63cc4cd22c2b9b88d9191c6962dd52dc8e6af1011fa7f73021d2ae0132eab9"
+
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.19-alpha/tuna_0.0.19-alpha_Linux-64bit.tar.gz"
+      sha256 "0d3c2bd11edf4d14699215a724da09edc5741e76550f0d7085d41962dd00238b"
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.19-alpha/tuna_0.0.19-alpha_Linux-ARM64.tar.gz"
+      sha256 "7e239fb94ad83c231eeea11406da0a2a936427e0f189f89cd91b1b4368a4d1fe"
+    end
   end
 
   def install
