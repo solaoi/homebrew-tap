@@ -5,29 +5,29 @@
 class Tuna < Formula
   desc "Software to generate and serve JSON/HTML on the node-based editor"
   homepage "https://github.com/solaoi/tuna-mayonnaise"
-  version "0.2.7-alpha"
+  version "0.2.8-alpha"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.7-alpha/tuna_0.2.7-alpha_darwin_amd64.tar.gz"
-      sha256 "ac8223944820f782add3e8d6e06d114cc0c84a91b37d8dd8db77ca71c9231bd1"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.8-alpha/tuna_0.2.8-alpha_darwin_amd64.tar.gz"
+      sha256 "0b221a7a6dca5edf9f52658e67a227ed84e3d394a478385edd363723fc488e72"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.7-alpha/tuna_0.2.7-alpha_darwin_arm64.tar.gz"
-      sha256 "76d6b1fe6fa2804ff1fc043378dbc74baac50020a2f3589e71aef8d20d47566e"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.8-alpha/tuna_0.2.8-alpha_darwin_arm64.tar.gz"
+      sha256 "4ccfc2ecdae3e43992620145def30724b7ea021ca40968be899b33c1ebbdc62f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.7-alpha/tuna_0.2.7-alpha_linux_amd64.tar.gz"
-      sha256 "7efcd15b92e17eb992e17dd6809de19995937caad7f53446520e197243218870"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.8-alpha/tuna_0.2.8-alpha_linux_amd64.tar.gz"
+      sha256 "ba38d0846e73161fcce60c87a1e2aaedbd2bd0d57639af79a94518a16c1b3098"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.7-alpha/tuna_0.2.7-alpha_linux_arm64.tar.gz"
-      sha256 "de12a085cd3d07875dad3623bbb3d500ea3366838e8ce85e0fd82db21972003c"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.8-alpha/tuna_0.2.8-alpha_linux_arm64.tar.gz"
+      sha256 "0722dd86a3ab95476036ad1421b799612100d75cb6298f11376c80067f57d25b"
     end
   end
 
