@@ -5,29 +5,29 @@
 class Tuna < Formula
   desc "Software to generate and serve JSON/HTML with flow model"
   homepage "https://github.com/solaoi/tuna-mayonnaise"
-  version "0.2.5-alpha"
+  version "0.2.6-alpha"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.5-alpha/tuna_0.2.5-alpha_macOS-64bit.tar.gz"
-      sha256 "aad167318146261fc6ab28d309fba1421c9451e989590f3b54a392faf4056c4a"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.6-alpha/tuna_0.2.6-alpha_macOS-64bit.tar.gz"
+      sha256 "88ccd6c2c5d0f5d72eaa4b60ef344bfc89c084244ff20b557d6eb83fa73f7e85"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.5-alpha/tuna_0.2.5-alpha_macOS-ARM64.tar.gz"
-      sha256 "1a9a53dc82db34a15c7ef41f81cfad8cfb4d9c214fc37a48c76894f13ccf60b3"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.6-alpha/tuna_0.2.6-alpha_macOS-ARM64.tar.gz"
+      sha256 "5ad04cffc63cdc37465ff98cbf7168c38a588b71eb3b081d0ee7565d8b924c87"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.5-alpha/tuna_0.2.5-alpha_Linux-64bit.tar.gz"
-      sha256 "b718651c2182e2889e3043762dff2659e466d2a88c4bf8e43de0f72e4e1bac0f"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.6-alpha/tuna_0.2.6-alpha_Linux-64bit.tar.gz"
+      sha256 "402a606c197be2dd73c4ee27b4379232be56b32641396f5c8bf57ac8aabf5a3c"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.5-alpha/tuna_0.2.5-alpha_Linux-ARM64.tar.gz"
-      sha256 "fd5e744fc789a59974c46e102d24cd0d853a847992262847c318fd9c3026cfb4"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.6-alpha/tuna_0.2.6-alpha_Linux-ARM64.tar.gz"
+      sha256 "79cc399d1d4435a0740c44219ab0a9d68e21f343ab6684544ce978e9e4a5eeda"
     end
   end
 
