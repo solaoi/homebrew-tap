@@ -5,29 +5,29 @@
 class Tuna < Formula
   desc "Software to generate and serve JSON/HTML with flow model"
   homepage "https://github.com/solaoi/tuna-mayonnaise"
-  version "0.2.1-alpha"
+  version "0.2.2-alpha"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.1-alpha/tuna_0.2.1-alpha_macOS-64bit.tar.gz"
-      sha256 "89cd9be445b77c738feb35b1fb15e211ead147a8c1f9c48e6da9933ec2ebfd38"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.2-alpha/tuna_0.2.2-alpha_macOS-64bit.tar.gz"
+      sha256 "a769f21916f5f77f15022bf72874935e335af24cefd7c9f69b02d9139a89efb2"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.1-alpha/tuna_0.2.1-alpha_macOS-ARM64.tar.gz"
-      sha256 "3e2bc37e643e94f93194dbcccbae2adcdea05d4d49e4cf4183266951e5d7dd70"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.2-alpha/tuna_0.2.2-alpha_macOS-ARM64.tar.gz"
+      sha256 "5126c7db149a90e3cfc61a78c6a8dab706957ad4335c6ad9b84b33f8c4367985"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.1-alpha/tuna_0.2.1-alpha_Linux-64bit.tar.gz"
-      sha256 "db1ed247bc2f45c281a56508b1a01147cd17cfa98d2a0878f972eba41431c55c"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.2-alpha/tuna_0.2.2-alpha_Linux-64bit.tar.gz"
+      sha256 "cfab7b6d36e3ccca3cbedf2df97eba072fad5ab8bc78b59c8297bc8107a14533"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.1-alpha/tuna_0.2.1-alpha_Linux-ARM64.tar.gz"
-      sha256 "f2680e04c25e2656265815993d5c9ea2e46b8e9ac6084252f6377d032f87c020"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.2-alpha/tuna_0.2.2-alpha_Linux-ARM64.tar.gz"
+      sha256 "88ae6489e6be428b17f93be26ba17242e23a1922e21186a1dab6f16e40fc23ad"
     end
   end
 
