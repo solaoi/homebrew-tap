@@ -5,29 +5,29 @@
 class Tuna < Formula
   desc "Software to generate and serve JSON/HTML on the node-based editor"
   homepage "https://github.com/solaoi/tuna-mayonnaise"
-  version "0.2.8-alpha"
+  version "0.2.9-alpha"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.8-alpha/tuna_0.2.8-alpha_darwin_amd64.tar.gz"
-      sha256 "0b221a7a6dca5edf9f52658e67a227ed84e3d394a478385edd363723fc488e72"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.9-alpha/tuna_0.2.9-alpha_darwin_amd64.tar.gz"
+      sha256 "37939a41bca14e6883ca37ae3c775c4ff27ea44d8edfd415d9f1d2d0be35b3e0"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.8-alpha/tuna_0.2.8-alpha_darwin_arm64.tar.gz"
-      sha256 "4ccfc2ecdae3e43992620145def30724b7ea021ca40968be899b33c1ebbdc62f"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.9-alpha/tuna_0.2.9-alpha_darwin_arm64.tar.gz"
+      sha256 "983fe5d439cd385cf3ac53f32d7e5574957d284f6b5e5dd37d9d489b678b8ddb"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.8-alpha/tuna_0.2.8-alpha_linux_amd64.tar.gz"
-      sha256 "ba38d0846e73161fcce60c87a1e2aaedbd2bd0d57639af79a94518a16c1b3098"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.9-alpha/tuna_0.2.9-alpha_linux_amd64.tar.gz"
+      sha256 "a80d6d987b10006580fff5d92400592048b6f9e5097bb3422f8b2af874030d5b"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.8-alpha/tuna_0.2.8-alpha_linux_arm64.tar.gz"
-      sha256 "0722dd86a3ab95476036ad1421b799612100d75cb6298f11376c80067f57d25b"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.2.9-alpha/tuna_0.2.9-alpha_linux_arm64.tar.gz"
+      sha256 "45bc363da14aacc5d26cea1e0f72055d2a7582d90085c22dffebde28ade0871f"
     end
   end
 
