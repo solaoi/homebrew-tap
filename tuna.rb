@@ -5,29 +5,29 @@
 class Tuna < Formula
   desc "Software to generate and serve JSON/HTML on the node-based editor"
   homepage "https://github.com/solaoi/tuna-mayonnaise"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.1/tuna_darwin_amd64.tar.gz"
-      sha256 "b256db439ee6d768fbcfdc935ba60710e121be8fcd78f3c97ff73d06d08c31df"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.2/tuna_darwin_amd64.tar.gz"
+      sha256 "a2f4a88182a7f90cdb0182f30b6f34d4d124e2eed284a59d8be89db972eedbf0"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.1/tuna_darwin_arm64.tar.gz"
-      sha256 "a1fef2d3503c3b8d866c44257fdbf70b6418d1cb73bbac6ac220684874577d16"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.2/tuna_darwin_arm64.tar.gz"
+      sha256 "1d49207e50adb48d81ff6149f46fc71e5c9008367dc96d8c5bcd7ed6394cd18e"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.1/tuna_linux_amd64.tar.gz"
-      sha256 "6f0432f3aa5f5d41f7a895d454712a4ec0f1f601dd9f2a0cac617fad9e47c035"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.2/tuna_linux_amd64.tar.gz"
+      sha256 "57eb25f2ac283f83e85cf9e09dd6e2e3b3f0a9c6c688ea5aab028341e274dd96"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.1/tuna_linux_arm64.tar.gz"
-      sha256 "ce3add07f7266840fd27a734f53ef4509fafe9e8cfcf117109261e5efbcfbd30"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.2/tuna_linux_arm64.tar.gz"
+      sha256 "c1e0755b31433b9d5b796cd34e3310220a854be31f53069623c9f194641a1a94"
     end
   end
 
