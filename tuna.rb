@@ -5,24 +5,32 @@
 class Tuna < Formula
   desc "Software to generate and serve JSON/HTML on the node-based editor"
   homepage "https://github.com/solaoi/tuna-mayonnaise"
-  version "0.0.14"
+  version "0.0.15"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.14/tuna_darwin_amd64.tar.gz"
-      sha256 "cb1fc5cb051a588e78813f59b81f3c20ae0c214a883a9dd1d58af72f5b770974"
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.15/tuna_darwin_amd64.tar.gz"
+    sha256 "2b4fa286387d3b9969e021bc0ba5e50aa18e6174c95f46934ef6310c25b0992e"
 
-      def install
-        bin.install "tuna"
+    def install
+      bin.install "tuna"
+    end
+
+    if Hardware::CPU.arm?
+      def caveats
+        <<~EOS
+          The darwin_arm64 architecture is not supported for the Tuna
+          formula at this time. The darwin_amd64 binary may work in compatibility
+          mode, but it might not be fully supported.
+        EOS
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.14/tuna_linux_amd64.tar.gz"
-      sha256 "276e1a80e4856150d29e40ac9f73a81081e0ce55cc5ca7b2a658efe162e512f2"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.15/tuna_linux_amd64.tar.gz"
+      sha256 "46d3bea9995e9ace8629924b3a24b20e80bf4c5d3045db8ca769ec9f8d004361"
 
       def install
         bin.install "tuna"
