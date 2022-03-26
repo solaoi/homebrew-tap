@@ -1,8 +1,8 @@
 class Colc < Formula
-  version '1.0.11'
+  version '1.0.12'
   homepage 'https://github.com/solaoi/colc'
-  url "https://github.com/solaoi/colc/releases/download/v1.0.11/colc_darwin_amd64.tar.gz"
-  sha256 '4a587e771edd697603f1b6b07fb48515377ba29b0f4cf0e906a80792f963990f'
+  url "https://github.com/solaoi/colc/releases/download/v1.0.12/colc_darwin_amd64.tar.gz"
+  sha256 'a139a9e69729efa173a4f1deba510907d0138aeb305d3077f41d3c81577052a0'
   head 'https://github.com/solaoi/colc.git'
 
   head do
