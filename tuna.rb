@@ -5,12 +5,12 @@
 class Tuna < Formula
   desc "Software to generate and serve JSON/HTML on the node-based editor"
   homepage "https://github.com/solaoi/tuna-mayonnaise"
-  version "0.0.23"
+  version "0.0.24"
   license "MIT"
 
   on_macos do
-    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.23/tuna_darwin_amd64.tar.gz"
-    sha256 "e7d7591058ad06e30ac00c79c8eff8b8cf9c01a86814295d640832eb1e585c6e"
+    url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.24/tuna_darwin_amd64.tar.gz"
+    sha256 "d3e1ac3468502fbbc14976f8ff2638419894cb86a17674afa5c7b2f0570e1a71"
 
     def install
       bin.install "tuna"
@@ -29,8 +29,8 @@ class Tuna < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.23/tuna_linux_amd64.tar.gz"
-      sha256 "b0e9fd4b58db1bc44ee0998eb9c4b53a36ca21e3f4dea466fbe42998a98cdb77"
+      url "https://github.com/solaoi/tuna-mayonnaise/releases/download/v0.0.24/tuna_linux_amd64.tar.gz"
+      sha256 "8e1c71f0e13b0d533019fd6e54221a5593c20bedf92338cd186dc62750d74ea8"
 
       def install
         bin.install "tuna"
