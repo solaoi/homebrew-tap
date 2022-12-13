@@ -1,8 +1,8 @@
 class Broly < Formula
-  version '0.2.2'
+  version '0.2.3'
   homepage 'https://github.com/solaoi/broly'
-  url "https://github.com/solaoi/broly/releases/download/v0.2.2/broly_darwin_amd64.tar.gz"
-  sha256 'a70dd64692b0a1debeda9eacf09198690ea69348b84179d7ec6000b85a37ec7f'
+  url "https://github.com/solaoi/broly/releases/download/v0.2.3/broly_darwin_amd64.tar.gz"
+  sha256 '744f750eaa57b906298b1c5263696b6e478c995f99107e9da7deb07ca630ab5c'
   head 'https://github.com/solaoi/broly.git'
 
   head do
